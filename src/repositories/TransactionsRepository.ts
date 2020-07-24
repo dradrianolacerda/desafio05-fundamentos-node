@@ -1,5 +1,4 @@
 import Transaction from '../models/Transaction';
-import CreateTransactionService from '../services/CreateTransactionService';
 
 interface CreateTransaction {
   title: string;
@@ -11,7 +10,6 @@ interface Balance {
   outcome: number;
   total: number;
 }
-
 class TransactionsRepository {
   private transactions: Transaction[];
 
